@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+html { 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../src/assets/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.toppane {
+    width: 100%;
+    height: 100px;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 35%;
+    float: right;
+}
+
+.column1 {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+  }
+
+  .column2 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+  }
+
+  .detail {
+      height: 500px;
+  }
+
+  .mat-card.scrollable-content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    .mat-card-title-group, line {
+      display: block;
+    }
+  
+    .details {
+        overflow-y: auto;
+    }
+  }
+
+.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%;
+    overflow:visible;
+}
+
+.logo {
+    position:relative;
+    max-width:100%;
+    margin-left:-50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
